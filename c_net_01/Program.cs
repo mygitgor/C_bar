@@ -1,1 +1,1 @@
-﻿Console.WriteLine("Hello, muPy!");
+﻿Console.WriteLine("Hello, myPy!");
