@@ -3,10 +3,11 @@
     private static void Main(string[] args)
     {
         // Задача №1. Напишите программу, которая на вход принимает два числа и проверяет, является ли первое число квадратом второго.
-        int a, b, c;
-        a = 5;
-        b = 25;
-        c = a * a;
+        
+        int a = Convert.ToInt32(Console.ReadLine());
+        int b = Convert.ToInt32(Console.ReadLine());
+        
+        int c = a * a;
         if (b == c) Console.WriteLine("a kvadrat b");
         else if (b != c) Console.WriteLine("a !=no kvadrat b");
 
@@ -29,28 +30,42 @@
             System.Console.WriteLine($"max= {digit2}");
             System.Console.WriteLine($"min= {digit1}");
         }
+        else
+        {
+             System.Console.WriteLine("your sums are equal");
+        }
 
 
         // Задача 4: Напишите программу, которая принимает на вход
         // три числа и выдает максимальное из этих чисел.
 
-
-        int a1, b1, c1, max;
-        a1 = 8;
-        b1 = 5;
-        c1 = 4;
+        int a1 = Convert.ToInt32(Console.ReadLine());
+        int b1 = Convert.ToInt32(Console.ReadLine());
+        int c1 = Convert.ToInt32(Console.ReadLine());
+        int max;
+    
         max = 0;
-        if (a1 > b1 && c1 < b1) max = a1;
+        if (a1 > b1 && a1 > c1) 
         {
+            max = a1;
+            Console.WriteLine("maximal chislo " + max);
+        }
+        else if (b1 > a1 && b1 > c1) 
+        {
+            max = b1;
+            Console.WriteLine("maximal chislo " + max);
+        }
+        else if (c1 > a1 && c1 > b1) 
+        {
+            max = c1;
             Console.WriteLine("maximal chislo " + max);
         }
 
 
         // Задача №5. Напишите программу, которая на вход принимает одно число (N), а на выходе показывает все целые числа в промежутке от -N до N.
 
-        int numBer = new Random().Next(-10, 10);
-                   for (numBer = -10; numBer < 10; numBer++) {
-                     System.Console.WriteLine("natural chislo:"+ numBer);  
+                   for (int n = -10; n <= 10; n++) {
+                     System.Console.WriteLine("natural chislo:"+ n);  
                    }
 
 
