@@ -84,7 +84,7 @@
        
        int n1 = Convert.ToInt32(Console.ReadLine());       
        
-       for (int i=n1; i>0; i-=2)
+       for (int i=n1; i>0;  i--)if (i%2==0)
        {
         System.Console.WriteLine(i);
        }
